@@ -32,7 +32,7 @@ const App = () => {
 
       {/* --- Navigation --- */}
       <nav className="fixed top-6 left-0 right-0 z-50 flex justify-center px-4">
-        <div className="bg-[#111]/30 backdrop-blur-xl border border-white/10 rounded-full px-6 py-3 w-full max-w-5xl flex items-center justify-between shadow-2xl shadow-black/50">
+        <div className="relative bg-[#111]/30 backdrop-blur-xl border border-white/10 rounded-full px-6 py-3 w-full max-w-5xl flex items-center justify-between shadow-2xl shadow-black/50">
 
           {/* Logo */}
           <div className="flex items-center gap-2">
@@ -43,7 +43,7 @@ const App = () => {
           </div>
 
           {/* Links (Hidden on mobile) */}
-          <div className="hidden md:flex items-center gap-8 text-sm font-medium text-neutral-400">
+          <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-8 text-sm font-medium text-neutral-400">
             <a href="#experience" className="hover:text-white transition-colors">Experience</a>
             <a href="#education" className="hover:text-white transition-colors">Education</a>
             <a href="#contact" className="hover:text-white transition-colors">Contact</a>
