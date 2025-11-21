@@ -32,7 +32,7 @@ const App = () => {
 
       {/* --- Navigation --- */}
       <nav className="fixed top-6 left-0 right-0 z-50 flex justify-center px-4">
-        <div className="bg-[#111]/80 backdrop-blur-xl border border-white/10 rounded-full px-6 py-3 w-full max-w-5xl flex items-center justify-between shadow-2xl shadow-black/50">
+        <div className="bg-[#111]/30 backdrop-blur-xl border border-white/10 rounded-full px-6 py-3 w-full max-w-5xl flex items-center justify-between shadow-2xl shadow-black/50">
 
           {/* Logo */}
           <div className="flex items-center gap-2">
