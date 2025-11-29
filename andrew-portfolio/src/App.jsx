@@ -20,6 +20,8 @@ import {
   Terminal,
   GraduationCap
 } from 'lucide-react';
+import CompanyLogos from './components/CompanyLogos';
+
 
 const App = () => {
   return (
@@ -96,6 +98,10 @@ const App = () => {
           </a>
         </div>
       </header>
+
+      {/* --- Company Logos Marquee --- */}
+      <CompanyLogos />
+
 
       {/* --- Experience Section (Bento Style) --- */}
       <section id="experience" className="relative z-10 max-w-5xl mx-auto px-4 pb-32">
