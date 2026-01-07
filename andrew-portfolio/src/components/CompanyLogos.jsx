@@ -9,8 +9,8 @@ const companies = [
 ];
 
 const CompanyLogos = () => {
-  // Duplicate the list to ensure seamless scrolling
-  const marqueeContent = [...companies, ...companies, ...companies, ...companies];
+  // Duplicate the list significantly to ensure seamless scrolling on large screens
+  const marqueeContent = Array(20).fill(companies).flat();
 
   return (
     <div className="w-full py-10 overflow-hidden relative z-10">
@@ -18,7 +18,10 @@ const CompanyLogos = () => {
       <div className="absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-[#050505] to-transparent z-20 pointer-events-none" />
       <div className="absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-[#050505] to-transparent z-20 pointer-events-none" />
 
-      <div className="flex w-max animate-marquee hover:[animation-play-state:paused]">
+      <div
+        className="flex w-max animate-marquee hover:[animation-play-state:paused]"
+        style={{ animationDuration: '150s' }}
+      >
         {marqueeContent.map((company, index) => (
           <div
             key={index}
