@@ -252,6 +252,36 @@ const App = () => {
         </div>
       </section>
 
+      {/* --- Wispr Flow Referral CTA --- */}
+      <section className="relative z-10 px-4 pb-20">
+        <div className="max-w-5xl mx-auto">
+          <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 px-6 py-6 md:px-10 md:py-8 backdrop-blur-sm">
+            <div className="absolute -top-16 right-8 h-40 w-40 rounded-full bg-blue-500/10 blur-3xl" />
+            <div className="relative flex flex-col md:flex-row items-start md:items-center justify-between gap-5">
+              <div>
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-blue-500/20 bg-blue-500/10 text-blue-300 text-xs font-bold uppercase tracking-wider mb-3">
+                  One-month trial
+                </div>
+                <h3 className="text-xl md:text-2xl font-semibold text-white mb-2">
+                  Try Wispr Flow Pro free
+                </h3>
+                <p className="text-sm md:text-base text-neutral-400">
+                  Claim a 1‑month trial with my invite link. Win‑win: you get Pro, I get credit.
+                </p>
+              </div>
+              <a
+                href="https://wisprflow.ai/r?ANDREW1667"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="shrink-0 bg-white text-black hover:bg-neutral-200 px-6 py-3 rounded-full font-bold transition-all flex items-center gap-2"
+              >
+                Get the 1‑month trial <ArrowRight className="w-4 h-4" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* --- Simple Footer --- */}
       <footer className="relative z-10 max-w-6xl mx-auto px-4 py-10 flex flex-col md:flex-row justify-between items-center text-xs text-neutral-600 border-t border-white/5 mt-10">
 
